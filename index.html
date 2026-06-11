@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Amazon.in — Online Shopping</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+<!-- ================================================ HEADER ================================================ -->
+<header class="header">
+  <div class="header-top">
+
+    <a href="#" class="logo">
+      <svg width="92" height="28" viewBox="0 0 116 35" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Amazon">
+        <text x="0" y="26" font-family="Arial Black,Arial" font-weight="900" font-size="28" fill="white" letter-spacing="-1">amazon</text>
+        <text x="93" y="28" font-family="Arial" font-weight="700" font-size="13" fill="#FF9900">.in</text>
+        <path d="M8 30 Q58 40 108 30" stroke="#FF9900" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+        <polygon points="104,27 110,30 104,33" fill="#FF9900"/>
+      </svg>
+    </a>
+
+    <div class="header-loc">
+      <svg width="14" height="18" viewBox="0 0 24 30" fill="none"><path d="M12 0C7.03 0 3 4.03 3 9c0 6.75 9 17 9 17s9-10.25 9-17c0-4.97-4.03-9-9-9z" fill="#fff"/><circle cx="12" cy="9" r="3" fill="#131921"/></svg>
+      <div><div class="loc-top">Deliver to</div><div class="loc-bot">India ▾</div></div>
+    </div>
+
+    <form class="search-bar" role="search">
+      <select class="search-cat" aria-label="Category">
+        <option>All</option><option>Electronics</option><option>Mobiles</option>
+        <option>Clothing</option><option>Books</option><option>Grocery</option>
+      </select>
+      <input type="search" class="search-input" placeholder="Search Amazon.in" aria-label="Search"/>
+      <button type="submit" class="search-btn" aria-label="Search">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7.5" stroke="#111" stroke-width="2.5"/><line x1="16.5" y1="16.5" x2="22" y2="22" stroke="#111" stroke-width="2.5" stroke-linecap="round"/></svg>
+      </button>
+    </form>
+
+    <div class="header-right">
+      <a href="#" class="hdr-link">
+        <div class="hdr-top">Hello, sign in</div>
+        <div class="hdr-bot">Account &amp; Lists ▾</div>
+      </a>
+      <a href="#" class="hdr-link">
+        <div class="hdr-top">Returns</div>
+        <div class="hdr-bot">&amp; Orders</div>
+      </a>
+      <a href="#" class="hdr-cart">
+        <div class="cart-wrap">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z" stroke="#fff" stroke-width="1.6"/><line x1="3" y1="6" x2="21" y2="6" stroke="#fff" stroke-width="1.6"/><path d="M16 10a4 4 0 01-8 0" stroke="#fff" stroke-width="1.6"/></svg>
+          <span class="cart-num">3</span>
+        </div>
+        <span class="cart-txt">Cart</span>
+      </a>
+    </div>
+
+    <input type="checkbox" id="hbg" class="hbg-cb"/>
+    <label for="hbg" class="hamburger"><span></span><span></span><span></span></label>
+  </div>
+
+  <nav class="nav-bar">
+    <div class="nav-inner">
+      <label for="hbg" class="nav-all">☰ All</label>
+      <a href="#" class="nav-lnk">Today's Deals</a>
+      <a href="#" class="nav-lnk">Mobiles</a>
+      <a href="#" class="nav-lnk">Electronics</a>
+      <a href="#" class="nav-lnk">Prime</a>
+      <a href="#" class="nav-lnk">Fashion</a>
+      <a href="#" class="nav-lnk">Home &amp; Kitchen</a>
+      <a href="#" class="nav-lnk">Books</a>
+      <a href="#" class="nav-lnk">Sell</a>
+      <a href="#" class="nav-lnk">Customer Service</a>
+    </div>
+  </nav>
+
+  <!-- Mobile drawer -->
+  <input type="checkbox" id="hbg" class="hbg-cb" style="display:none"/>
+  <div class="mob-drawer">
+    <div class="drawer-head">
+      <span style="color:#fff;font-weight:800;font-size:1.1rem;">amazon<span style="color:#FF9900;font-size:.75rem;">.in</span></span>
+    </div>
+    <a href="#" class="d-lnk">Today's Deals</a>
+    <a href="#" class="d-lnk">Mobiles</a>
+    <a href="#" class="d-lnk">Electronics</a>
+    <a href="#" class="d-lnk">Prime</a>
+    <a href="#" class="d-lnk">Fashion</a>
+    <a href="#" class="d-lnk">Home &amp; Kitchen</a>
+    <a href="#" class="d-lnk">Books</a>
+    <a href="#" class="d-lnk">Sell</a>
+    <a href="#" class="d-lnk">Your Account</a>
+  </div>
+  <label for="hbg" class="drawer-overlay"></label>
+</header>
+
+<!-- ================================================ HERO SLIDER ================================================ -->
+<section class="hero-section">
+  <input type="radio" name="sl" id="sl1" class="sl-r" checked/>
+  <input type="radio" name="sl" id="sl2" class="sl-r"/>
+  <input type="radio" name="sl" id="sl3" class="sl-r"/>
+  <div class="sl-track">
+    <div class="sl-slide s1">
+      <div class="sl-content">
+        <span class="sl-tag">Limited Time</span>
+        <h1>Great Indian Festival</h1>
+        <p>Up to <strong>80% off</strong> on top brands</p>
+        <a href="#" class="sl-btn">Shop Now</a>
+      </div>
+      <img src="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=900&q=80" alt="Shopping festival" class="sl-bg-img"/>
+    </div>
+    <div class="sl-slide s2">
+      <div class="sl-content">
+        <span class="sl-tag">New Launch</span>
+        <h1>iPhone 15 is Here</h1>
+        <p>Experience titanium. Starting <strong>₹79,900</strong></p>
+        <a href="#" class="sl-btn">Buy Now</a>
+      </div>
+      <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=900&q=80" alt="Smartphone" class="sl-bg-img"/>
+    </div>
+    <div class="sl-slide s3">
+      <div class="sl-content dark-content">
+        <span class="sl-tag prime-tag">Prime Exclusive</span>
+        <h1>Prime Members Sale</h1>
+        <p>Extra <strong>10% off</strong> on all categories</p>
+        <a href="#" class="sl-btn prime-sl-btn">Get Prime</a>
+      </div>
+      <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=900&q=80" alt="Fashion sale" class="sl-bg-img"/>
+    </div>
+  </div>
+  <div class="sl-dots">
+    <label for="sl1" class="sl-dot"></label>
+    <label for="sl2" class="sl-dot"></label>
+    <label for="sl3" class="sl-dot"></label>
+  </div>
+  <label for="sl2" class="sl-arr sl-next arr-s1n">&#10095;</label>
+  <label for="sl3" class="sl-arr sl-next arr-s2n">&#10095;</label>
+  <label for="sl1" class="sl-arr sl-next arr-s3n">&#10095;</label>
+  <label for="sl3" class="sl-arr sl-prev arr-s1p">&#10094;</label>
+  <label for="sl1" class="sl-arr sl-prev arr-s2p">&#10094;</label>
+  <label for="sl2" class="sl-arr sl-prev arr-s3p">&#10094;</label>
+</section>
+
+<!-- ================================================ DEAL CARDS ================================================ -->
+<section class="deal-cards-sec">
+  <div class="container">
+    <div class="dc-row">
+
+      <div class="dc-card">
+        <h2 class="dc-title">Up to 70% off | Clothing</h2>
+        <div class="dc-grid">
+          <a href="#" class="dc-item">
+            <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=200&q=75" alt="Men's clothing"/>
+            <span>Men</span>
+          </a>
+          <a href="#" class="dc-item">
+            <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=200&q=75" alt="Women's clothing"/>
+            <span>Women</span>
+          </a>
+          <a href="#" class="dc-item">
+            <img src="https://images.unsplash.com/photo-1503919005314-30d93d07d823?w=200&q=75" alt="Kids clothing"/>
+            <span>Kids</span>
+          </a>
+          <a href="#" class="dc-item">
+            <img src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=200&q=75" alt="Accessories"/>
+            <span>Accessories</span>
+          </a>
+        </div>
+        <a href="#" class="dc-more">See all offers</a>
+      </div>
+
+      <div class="dc-card">
+        <h2 class="dc-title">Electronics — Best Sellers</h2>
+        <div class="dc-grid">
+          <a href="#" class="dc-item">
+            <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=200&q=75" alt="Laptop"/>
+            <span>Laptops</span>
+          </a>
+          <a href="#" class="dc-item">
+            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=200&q=75" alt="Headphones"/>
+            <span>Audio</span>
+          </a>
+          <a href="#" class="dc-item">
+            <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=200&q=75" alt="Camera"/>
+            <span>Cameras</span>
+          </a>
+          <a href="#" class="dc-item">
+            <img src="https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?w=200&q=75" alt="Tablet"/>
+            <span>Tablets</span>
+          </a>
+        </div>
+        <a href="#" class="dc-more">See all offers</a>
+      </div>
+
+      <div class="dc-card">
+        <h2 class="dc-title">Home &amp; Kitchen Deals</h2>
+        <div class="dc-grid">
+          <a href="#" class="dc-item">
+            <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=200&q=75" alt="Kitchen"/>
+            <span>Kitchen</span>
+          </a>
+          <a href="#" class="dc-item">
+            <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=200&q=75" alt="Bedding"/>
+            <span>Bedding</span>
+          </a>
+          <a href="#" class="dc-item">
+            <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=200&q=75" alt="Furniture"/>
+            <span>Furniture</span>
+          </a>
+          <a href="#" class="dc-item">
+            <img src="https://images.unsplash.com/photo-1565182999561-18d7dc61c393?w=200&q=75" alt="Decor"/>
+            <span>Decor</span>
+          </a>
+        </div>
+        <a href="#" class="dc-more">See all offers</a>
+      </div>
+
+      <div class="dc-card">
+        <h2 class="dc-title">Mobiles &amp; Accessories</h2>
+        <div class="dc-grid">
+          <a href="#" class="dc-item">
+            <img src="https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?w=200&q=75" alt="Smartphones"/>
+            <span>Smartphones</span>
+          </a>
+          <a href="#" class="dc-item">
+            <img src="https://images.unsplash.com/photo-1583863788434-e58a36330cf0?w=200&q=75" alt="Earphones"/>
+            <span>Earphones</span>
+          </a>
+          <a href="#" class="dc-item">
+            <img src="https://images.unsplash.com/photo-1601972602237-8c79241e468b?w=200&q=75" alt="Phone cases"/>
+            <span>Cases</span>
+          </a>
+          <a href="#" class="dc-item">
+            <img src="https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=200&q=75" alt="Smart watch"/>
+            <span>Wearables</span>
+          </a>
+        </div>
+        <a href="#" class="dc-more">See all offers</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================================================ TRENDING DEALS ================================================ -->
+<section class="prod-sec">
+  <div class="container">
+    <div class="sec-hdr"><h2 class="sec-ttl">Trending Deals</h2><a href="#" class="see-all">See all deals</a></div>
+    <div class="prod-row">
+
+      <article class="pcard">
+        <span class="pbadge red">Deal of the Day</span>
+        <a href="#" class="pimg-a">
+          <img src="https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=300&q=80" alt="Wireless Earbuds"/>
+        </a>
+        <div class="pbody">
+          <h3 class="pname">boAt Airdopes 141 Wireless Earbuds</h3>
+          <div class="pstars"><span class="pfill" style="width:82%"></span></div>
+          <div class="pprice"><span class="pcur">₹999</span><span class="pmrp">₹2,990</span><span class="poff">67% off</span></div>
+          <p class="pfree">FREE Delivery by <strong>Tomorrow</strong></p>
+          <a href="#" class="atc">Add to Cart</a>
+        </div>
+      </article>
+
+      <article class="pcard">
+        <span class="pbadge green">Best Seller</span>
+        <a href="#" class="pimg-a">
+          <img src="https://images.unsplash.com/photo-1593784991095-a205069470b6?w=300&q=80" alt="Fire TV Stick"/>
+        </a>
+        <div class="pbody">
+          <h3 class="pname">Fire TV Stick 4K with Alexa Voice Remote</h3>
+          <div class="pstars"><span class="pfill" style="width:88%"></span></div>
+          <div class="pprice"><span class="pcur">₹3,499</span><span class="pmrp">₹6,999</span><span class="poff">50% off</span></div>
+          <p class="pfree">FREE Delivery by <strong>Tomorrow</strong></p>
+          <a href="#" class="atc">Add to Cart</a>
+        </div>
+      </article>
+
+      <article class="pcard">
+        <a href="#" class="pimg-a">
+          <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=300&q=80" alt="Smart Watch"/>
+        </a>
+        <div class="pbody">
+          <h3 class="pname">Samsung Galaxy Watch 6 Classic Bluetooth</h3>
+          <div class="pstars"><span class="pfill" style="width:84%"></span></div>
+          <div class="pprice"><span class="pcur">₹24,999</span><span class="pmrp">₹34,999</span><span class="poff">29% off</span></div>
+          <p class="pfree">FREE Delivery by <strong>Wednesday</strong></p>
+          <a href="#" class="atc">Add to Cart</a>
+        </div>
+      </article>
+
+      <article class="pcard">
+        <span class="pbadge blue">Prime</span>
+        <a href="#" class="pimg-a">
+          <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=300&q=80" alt="Hair Dryer"/>
+        </a>
+        <div class="pbody">
+          <h3 class="pname">Philips Hair Dryer 1200W with Diffuser</h3>
+          <div class="pstars"><span class="pfill" style="width:86%"></span></div>
+          <div class="pprice"><span class="pcur">₹1,399</span><span class="pmrp">₹2,995</span><span class="poff">53% off</span></div>
+          <p class="pfree">FREE Delivery by <strong>Tomorrow</strong></p>
+          <a href="#" class="atc">Add to Cart</a>
+        </div>
+      </article>
+
+      <article class="pcard">
+        <a href="#" class="pimg-a">
+          <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=300&q=80" alt="Nike Shoes"/>
+        </a>
+        <div class="pbody">
+          <h3 class="pname">Nike Air Max 270 Running Shoes</h3>
+          <div class="pstars"><span class="pfill" style="width:90%"></span></div>
+          <div class="pprice"><span class="pcur">₹8,995</span><span class="pmrp">₹13,995</span><span class="poff">36% off</span></div>
+          <p class="pfree">FREE Delivery by <strong>Thursday</strong></p>
+          <a href="#" class="atc">Add to Cart</a>
+        </div>
+      </article>
+
+      <article class="pcard">
+        <span class="pbadge red">Lightning Deal</span>
+        <a href="#" class="pimg-a">
+          <img src="https://images.unsplash.com/photo-1585515320310-259814833e62?w=300&q=80" alt="Pressure Cooker"/>
+        </a>
+        <div class="pbody">
+          <h3 class="pname">Instant Pot Duo 7-in-1 Electric Pressure Cooker</h3>
+          <div class="pstars"><span class="pfill" style="width:92%"></span></div>
+          <div class="pprice"><span class="pcur">₹6,495</span><span class="pmrp">₹11,995</span><span class="poff">46% off</span></div>
+          <p class="pfree">FREE Delivery by <strong>Friday</strong></p>
+          <a href="#" class="atc">Add to Cart</a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================================================ PRIME BANNER ================================================ -->
+<section class="prime-sec">
+  <div class="container">
+    <div class="prime-box">
+      <div class="prime-left">
+        <div class="prime-logo">prime</div>
+        <p>Get <strong>FREE</strong> fast delivery, exclusive deals, Prime Video &amp; more.</p>
+        <a href="#" class="prime-cta">Try Prime FREE for 30 days</a>
+        <a href="#" class="prime-link">Learn more about Prime</a>
+      </div>
+      <div class="prime-perks">
+        <div class="perk">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><rect x="2" y="3" width="15" height="13" rx="2" stroke="#00A8E1" stroke-width="2"/><polygon points="17 8 22 5 22 19 17 16" stroke="#00A8E1" stroke-width="2"/></svg>
+          <span>Prime Video</span>
+        </div>
+        <div class="perk">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="#00A8E1" stroke-width="2"/><path d="M9 10l6-2v8l-6 2V10z" stroke="#00A8E1" stroke-width="2"/></svg>
+          <span>Prime Music</span>
+        </div>
+        <div class="perk">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5l7 7-7 7" stroke="#00A8E1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span>Fast Delivery</span>
+        </div>
+        <div class="perk">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><rect x="2" y="7" width="20" height="13" rx="2" stroke="#00A8E1" stroke-width="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2" stroke="#00A8E1" stroke-width="2"/></svg>
+          <span>Exclusive Deals</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================ BOOKS ================================================ -->
+<section class="prod-sec">
+  <div class="container">
+    <div class="sec-hdr"><h2 class="sec-ttl">Best Sellers in Books</h2><a href="#" class="see-all">See all books</a></div>
+    <div class="prod-row">
+
+      <article class="pcard">
+        <a href="#" class="pimg-a">
+          <img src="https://images-na.ssl-images-amazon.com/images/I/81bGKUa1e0L.jpg" alt="Atomic Habits" onerror="this.src='https://via.placeholder.com/200x280/f7f7f7/333?text=Atomic+Habits'"/>
+        </a>
+        <div class="pbody">
+          <h3 class="pname">Atomic Habits — James Clear</h3>
+          <div class="pstars"><span class="pfill" style="width:94%"></span></div>
+          <div class="pprice"><span class="pcur">₹399</span><span class="pmrp">₹699</span><span class="poff">43% off</span></div>
+          <a href="#" class="atc">Add to Cart</a>
+        </div>
+      </article>
+
+      <article class="pcard">
+  <a href="#" class="pimg-a">
+    <!-- Pointed to local project file -->
+    <img src="Psychology of Money.jpg" alt="Psychology of Money" />
+
+  </a>
+  <div class="pbody">
+    <h3 class="pname">The Psychology of Money — Morgan Housel</h3>
+    <div class="pstars"><span class="pfill" style="width:92%"></span></div>
+    <div class="pprice"><span class="pcur">₹299</span><span class="pmrp">₹499</span><span class="poff">40% off</span></div>
+    <a href="#" class="atc">Add to Cart</a>
+  </div>
+</article>
+
+
+
+      <article class="pcard">
+        <a href="#" class="pimg-a">
+          <img src="https://images-na.ssl-images-amazon.com/images/I/81BE7eeKzAL.jpg" alt="Rich Dad Poor Dad" onerror="this.src='https://via.placeholder.com/200x280/f7f7f7/333?text=Rich+Dad+Poor+Dad'"/>
+        </a>
+        <div class="pbody">
+          <h3 class="pname">Rich Dad Poor Dad — Robert Kiyosaki</h3>
+          <div class="pstars"><span class="pfill" style="width:90%"></span></div>
+          <div class="pprice"><span class="pcur">₹249</span><span class="pmrp">₹450</span><span class="poff">45% off</span></div>
+          <a href="#" class="atc">Add to Cart</a>
+        </div>
+      </article>
+
+      <article class="pcard">
+        <a href="#" class="pimg-a">
+          <img src="https://images-na.ssl-images-amazon.com/images/I/71UypkUjStL.jpg" alt="Think and Grow Rich" onerror="this.src='https://via.placeholder.com/200x280/f7f7f7/333?text=Think+and+Grow+Rich'"/>
+        </a>
+        <div class="pbody">
+          <h3 class="pname">Think and Grow Rich — Napoleon Hill</h3>
+          <div class="pstars"><span class="pfill" style="width:92%"></span></div>
+          <div class="pprice"><span class="pcur">₹199</span><span class="pmrp">₹350</span><span class="poff">43% off</span></div>
+          <a href="#" class="atc">Add to Cart</a>
+        </div>
+      </article>
+
+      <article class="pcard">
+        <a href="#" class="pimg-a">
+          <img src="https://images-na.ssl-images-amazon.com/images/I/71aFt4+OTOL.jpg" alt="The Alchemist" onerror="this.src='https://via.placeholder.com/200x280/f7f7f7/333?text=The+Alchemist'"/>
+        </a>
+        <div class="pbody">
+          <h3 class="pname">The Alchemist — Paulo Coelho</h3>
+          <div class="pstars"><span class="pfill" style="width:94%"></span></div>
+          <div class="pprice"><span class="pcur">₹199</span><span class="pmrp">₹350</span><span class="poff">43% off</span></div>
+          <a href="#" class="atc">Add to Cart</a>
+        </div>
+      </article>
+
+      <article class="pcard">
+  <a href="#" class="pimg-a">
+    <!-- Pointed to local project file -->
+    <img src="Zero to One.jpg" alt="Zero to One" />
+
+  </a>
+  <div class="pbody">
+    <h3 class="pname">Zero to One — Peter Thiel</h3>
+    <div class="pstars"><span class="pfill" style="width:85%"></span></div>
+    <div class="pprice"><span class="pcur">₹349</span><span class="pmrp">₹599</span><span class="poff">42% off</span></div>
+    <a href="#" class="atc">Add to Cart</a>
+  </div>
+</article>
+
+
+    </div>
+  </div>
+</section>
+
+<!-- ================================================ 3-COL PROMO ================================================ -->
+<section class="promo3-sec">
+  <div class="container">
+    <div class="promo3-row">
+      <div class="p3card">
+        <h3>Fashion under ₹999</h3>
+        <img src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=500&q=75" alt="Fashion deals"/>
+        <a href="#">Shop now</a>
+      </div>
+      <div class="p3card">
+        <h3>Electronics — Top Brands</h3>
+        <img src="https://images.unsplash.com/photo-1468495244123-6c6c332eeece?w=500&q=75" alt="Electronics deals"/>
+        <a href="#">Shop now</a>
+      </div>
+      <div class="p3card">
+        <h3>Amazon Fresh Grocery</h3>
+        <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?w=500&q=75" alt="Fresh grocery"/>
+        <a href="#">Shop now</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================ FOOTER ================================================ -->
+<footer class="footer">
+  <a href="#" class="btt">Back to top</a>
+  <div class="footer-cols">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h4>Get to Know Us</h4>
+          <ul><li><a href="#">About Amazon</a></li><li><a href="#">Careers</a></li><li><a href="#">Press Releases</a></li><li><a href="#">Amazon Science</a></li></ul>
+        </div>
+        <div>
+          <h4>Connect with Us</h4>
+          <ul><li><a href="#">Facebook</a></li><li><a href="#">Twitter</a></li><li><a href="#">Instagram</a></li><li><a href="#">YouTube</a></li></ul>
+        </div>
+        <div>
+          <h4>Make Money with Us</h4>
+          <ul><li><a href="#">Sell on Amazon</a></li><li><a href="#">Amazon Associates</a></li><li><a href="#">Fulfilment by Amazon</a></li><li><a href="#">Advertise</a></li></ul>
+        </div>
+        <div>
+          <h4>Let Us Help You</h4>
+          <ul><li><a href="#">Your Account</a></li><li><a href="#">Returns Centre</a></li><li><a href="#">Purchase Protection</a></li><li><a href="#">Help</a></li></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="footer-btm-inner">
+        <span class="ftlogo">amazon<span style="color:#FF9900;font-size:.7rem;">.in</span></span>
+        <p>&copy; 1996–2026 Amazon.com, Inc. &nbsp;|&nbsp; Conditions of Use &nbsp;|&nbsp; Privacy Notice &nbsp;|&nbsp; Educational Clone</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
